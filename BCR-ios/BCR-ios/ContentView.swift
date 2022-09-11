@@ -8,9 +8,17 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    var model = Model()
+    
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+            NavigationView {
+                // TitleOnlyLabelStyle("Select A Resource")
+                List(model.resources) {
+                    resource in
+                    NavigationLink(resource.title, destination: ResourceView(id: resource.id))
+                }
+            }
     }
 }
 

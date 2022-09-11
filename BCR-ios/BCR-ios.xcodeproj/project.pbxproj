@@ -15,6 +15,9 @@
 		98BC2F1428CE5A6C00662124 /* BCR_iosUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98BC2F1328CE5A6C00662124 /* BCR_iosUITests.swift */; };
 		98BC2F1628CE5A6C00662124 /* BCR_iosUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98BC2F1528CE5A6C00662124 /* BCR_iosUITestsLaunchTests.swift */; };
 		98BC2F2328CE5B5C00662124 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 98BC2F2228CE5B5C00662124 /* Launch Screen.storyboard */; };
+		98BC2F2528CE5F3700662124 /* ResourceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98BC2F2428CE5F3700662124 /* ResourceView.swift */; };
+		98BC2F2728CE651A00662124 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98BC2F2628CE651A00662124 /* Model.swift */; };
+		98BC2F2928CE668B00662124 /* Resource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98BC2F2828CE668B00662124 /* Resource.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +49,9 @@
 		98BC2F1328CE5A6C00662124 /* BCR_iosUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BCR_iosUITests.swift; sourceTree = "<group>"; };
 		98BC2F1528CE5A6C00662124 /* BCR_iosUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BCR_iosUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		98BC2F2228CE5B5C00662124 /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		98BC2F2428CE5F3700662124 /* ResourceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResourceView.swift; sourceTree = "<group>"; };
+		98BC2F2628CE651A00662124 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		98BC2F2828CE668B00662124 /* Resource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Resource.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +105,9 @@
 			children = (
 				98BC2EF828CE5A6B00662124 /* BCR_iosApp.swift */,
 				98BC2EFA28CE5A6B00662124 /* ContentView.swift */,
+				98BC2F2428CE5F3700662124 /* ResourceView.swift */,
+				98BC2F2628CE651A00662124 /* Model.swift */,
+				98BC2F2828CE668B00662124 /* Resource.swift */,
 				98BC2EFC28CE5A6C00662124 /* Assets.xcassets */,
 				98BC2EFE28CE5A6C00662124 /* Preview Content */,
 			);
@@ -263,6 +272,9 @@
 			files = (
 				98BC2EFB28CE5A6B00662124 /* ContentView.swift in Sources */,
 				98BC2EF928CE5A6B00662124 /* BCR_iosApp.swift in Sources */,
+				98BC2F2528CE5F3700662124 /* ResourceView.swift in Sources */,
+				98BC2F2928CE668B00662124 /* Resource.swift in Sources */,
+				98BC2F2728CE651A00662124 /* Model.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
