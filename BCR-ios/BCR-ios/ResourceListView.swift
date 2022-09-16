@@ -12,7 +12,6 @@ struct ResourceListView: View {
     var model = Model()
     
     var body: some View {
-        
         NavigationView {
             List(model.resources.data) {
                 resource in
