@@ -24,12 +24,12 @@ struct ResourceView: View {
                     Spacer()
                     AsyncImage(url: URL(string: resource.picture!)) { image in
                         image.resizable()
-                        //image.scaledToFit()
                     } placeholder: {
                         ProgressView()
                     }
                     .cornerRadius(8)
                     .scaledToFit()
+                    .frame(width: 300, height: 300)
                     Spacer()
                 }
             }

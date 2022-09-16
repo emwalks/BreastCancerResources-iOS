@@ -10,7 +10,7 @@ import Foundation
 class Model: Equatable {
     var resources: [Resource] = []
     
-    private let myhardcodedResource: Resource = Resource(
+    private let myHardcodedResource: Resource = Resource(
         id: 1,
         title: "The Complete Guide to Breast Cancer",
         subtitle: "How to Feel Empowered and Take Control",
@@ -19,16 +19,25 @@ class Model: Equatable {
         link: URL(string: "https://uk.bookshop.org/books/the-complete-guide-to-breast-cancer-how-to-feel-empowered-and-take-control/9781785041877")!,
         tags: ["book"])
     
+    private let mySecondHardcodedResource: Resource = Resource(
+        id: 2,
+        title: "You, Me and the Big C",
+        subtitle: "Putting the can in cancer",
+        description: "After I got diagnosed, I went right back to the first episode of this podcast and made my way through them all. Open, honest, frank conversations between people who know where you're at.",
+        picture: "https://ichef.bbci.co.uk/images/ic/320x320/p06bfy8j.jpg",
+        link: URL(string:     "https://www.bbc.co.uk/sounds/brand/p0608649")!,
+        tags: ["podcast"])
+    
     init() {
         self.getResources()
     }
     
     private func getResources() {
-        self.resources = [myhardcodedResource]
+        self.resources = [myHardcodedResource, mySecondHardcodedResource]
     }
     
     static func == (lhs: Model, rhs: Model) -> Bool {
         return lhs.resources == rhs.resources &&
-        lhs.myhardcodedResource == rhs.myhardcodedResource
+        lhs.myHardcodedResource == rhs.myHardcodedResource
     }
 }
