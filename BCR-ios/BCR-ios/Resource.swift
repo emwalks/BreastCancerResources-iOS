@@ -10,8 +10,9 @@ import Foundation
 struct Resource: Hashable, Codable, Identifiable {
     var id: Int
     var title: String
-    var description: String
-    var picture: String
-    var link: URL
+    var subtitle: String?
+    var description: String?
+    var picture: String?
+    var link: URL?
     var tags: [String]?
 }

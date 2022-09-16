@@ -18,6 +18,7 @@
 		98BC2F2528CE5F3700662124 /* ResourceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98BC2F2428CE5F3700662124 /* ResourceView.swift */; };
 		98BC2F2728CE651A00662124 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98BC2F2628CE651A00662124 /* Model.swift */; };
 		98BC2F2928CE668B00662124 /* Resource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98BC2F2828CE668B00662124 /* Resource.swift */; };
+		98ECC8D528D47255001CCBBC /* ResourceListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98ECC8D428D47255001CCBBC /* ResourceListView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +53,7 @@
 		98BC2F2428CE5F3700662124 /* ResourceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResourceView.swift; sourceTree = "<group>"; };
 		98BC2F2628CE651A00662124 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		98BC2F2828CE668B00662124 /* Resource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Resource.swift; sourceTree = "<group>"; };
+		98ECC8D428D47255001CCBBC /* ResourceListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResourceListView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +107,7 @@
 			children = (
 				98BC2EF828CE5A6B00662124 /* BCR_iosApp.swift */,
 				98BC2EFA28CE5A6B00662124 /* ContentView.swift */,
+				98ECC8D428D47255001CCBBC /* ResourceListView.swift */,
 				98BC2F2428CE5F3700662124 /* ResourceView.swift */,
 				98BC2F2628CE651A00662124 /* Model.swift */,
 				98BC2F2828CE668B00662124 /* Resource.swift */,
@@ -272,6 +275,7 @@
 			files = (
 				98BC2EFB28CE5A6B00662124 /* ContentView.swift in Sources */,
 				98BC2EF928CE5A6B00662124 /* BCR_iosApp.swift in Sources */,
+				98ECC8D528D47255001CCBBC /* ResourceListView.swift in Sources */,
 				98BC2F2528CE5F3700662124 /* ResourceView.swift in Sources */,
 				98BC2F2928CE668B00662124 /* Resource.swift in Sources */,
 				98BC2F2728CE651A00662124 /* Model.swift in Sources */,
