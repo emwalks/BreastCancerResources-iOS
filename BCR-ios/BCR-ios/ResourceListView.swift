@@ -14,9 +14,9 @@ struct ResourceListView: View {
     var body: some View {
         
         NavigationView {
-            List(model.resources) {
+            List(model.resources.data) {
                 resource in
-                NavigationLink(resource.title,
+                NavigationLink(resource.attributes.title,
                                destination: ResourceView(resource: resource))
             }
             .navigationTitle("Resources")
