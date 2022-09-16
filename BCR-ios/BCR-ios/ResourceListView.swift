@@ -10,10 +10,10 @@ import SwiftUI
 struct ResourceListView: View {
     
     var model = Model()
-    
+                
     var body: some View {
         NavigationView {
-            List(model.resources.data) {
+            List(model.resources) {
                 resource in
                 NavigationLink(resource.attributes.title,
                                destination: ResourceView(resource: resource))

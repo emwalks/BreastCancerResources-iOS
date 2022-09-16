@@ -7,11 +7,11 @@
 
 import Foundation
 
-struct Model {
+class Model {
     
     private let myHardcodedResourceAttributes: Attributes
     private let mySecondHardcodedResourceAttributes: Attributes
-    let resources: Resources
+    var resources: [Resource] = []
     
     init() {
         self.myHardcodedResourceAttributes = Attributes(
@@ -30,8 +30,22 @@ struct Model {
             link: URL(string:     "https://www.bbc.co.uk/sounds/brand/p0608649")!,
             tags: ["podcast"])
         
-        self.resources = Resources(data: [Resource(attributes: myHardcodedResourceAttributes, id: UUID()),
-                                          Resource(attributes: mySecondHardcodedResourceAttributes, id: UUID())
-                                                     ])
+        self.resources = [
+            Resource(
+                attributes: myHardcodedResourceAttributes,
+                id: UUID()),
+            Resource(
+                attributes: mySecondHardcodedResourceAttributes,
+                id: UUID())
+        ]
+    }
+        
+    public func getRemoteResources() async {
+        do {
+            let resources = try await Networking().fetchResources()
+            self.resources = resources
+        } catch {
+            print(error)
+        }
     }
 }
