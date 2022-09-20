@@ -14,9 +14,22 @@ public struct Networking {
     // https://www.raywenderlich.com/28450876-beginning-networking-with-urlsession/lessons/2
     func fetchResources() async throws -> [Resource] {
         let url = URL(string:"https://emwalks.github.io/BreastCancerResourcesRemoteRepo/data/resources.json")!
-        let (data, _) = try await URLSession.shared.data(from: url)
+        let (data, response) = try await URLSession.shared.data(from: url)
         
-        return try JSONDecoder().decode(Resources.self, from: data).data
+        guard let httpResponse = response as? HTTPURLResponse, httpResponse.statusCode == 200 else {
+            throw BCRError.invalidServerReponse
+        }
+        
+        guard let resources = try? JSONDecoder().decode(Resources.self, from: data).data else {
+            throw BCRError.parsingError
+        }
+        return resources
+    }
+    
+    
+    enum BCRError: Error {
+        case invalidServerReponse
+        case parsingError
     }
 
 }

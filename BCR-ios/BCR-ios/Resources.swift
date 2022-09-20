@@ -12,11 +12,7 @@ public struct Resources: Decodable {
 }
 
 public struct Resource: Decodable, Identifiable {
-    public let attributes: Attributes
-    public var id: UUID
-}
-
-public struct Attributes: Decodable {
+    public var id: Int 
     var title: String
     var subtitle: String?
     var description: String?
@@ -24,3 +20,13 @@ public struct Attributes: Decodable {
     var link: URL?
     var tags: [String]?
 }
+
+//public struct Attributes: Decodable, Identifiable {
+//    public var id: Int
+//    var title: String
+//    var subtitle: String?
+//    var description: String?
+//    var picture: String?
+//    var link: URL?
+//    var tags: [String]?
+//}

@@ -15,11 +15,17 @@ struct ResourceListView: View {
         NavigationView {
             List(model.resources) {
                 resource in
-                NavigationLink(resource.attributes.title,
+                NavigationLink(resource.title,
                                destination: ResourceView(resource: resource))
             }
             .navigationTitle("Resources")
+            .onAppear {
+                Task {
+                    await model.getRemoteResources()
+                }
+            }
             Text("Select a Resource")
+            
         }
     }
 }
