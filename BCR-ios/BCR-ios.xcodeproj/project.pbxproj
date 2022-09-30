@@ -22,6 +22,8 @@
 		98BD688D28E700D600A2848B /* ResourcesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98BD688C28E700D600A2848B /* ResourcesViewModel.swift */; };
 		98BD688F28E7018700A2848B /* HardcodedResourceDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98BD688E28E7018700A2848B /* HardcodedResourceDataService.swift */; };
 		98BD689428E709C600A2848B /* ResourceDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98BD689328E709C600A2848B /* ResourceDataService.swift */; };
+		98BD689628E70C4600A2848B /* RemoteResourceDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98BD689528E70C4600A2848B /* RemoteResourceDataService.swift */; };
+		98C37BF028E70EE800E988A9 /* BCRError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98C37BEF28E70EE800E988A9 /* BCRError.swift */; };
 		98ECC8D528D47255001CCBBC /* ResourceListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98ECC8D428D47255001CCBBC /* ResourceListView.swift */; };
 /* End PBXBuildFile section */
 
@@ -62,6 +64,8 @@
 		98BD688C28E700D600A2848B /* ResourcesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResourcesViewModel.swift; sourceTree = "<group>"; };
 		98BD688E28E7018700A2848B /* HardcodedResourceDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HardcodedResourceDataService.swift; sourceTree = "<group>"; };
 		98BD689328E709C600A2848B /* ResourceDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResourceDataService.swift; sourceTree = "<group>"; };
+		98BD689528E70C4600A2848B /* RemoteResourceDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteResourceDataService.swift; sourceTree = "<group>"; };
+		98C37BEF28E70EE800E988A9 /* BCRError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BCRError.swift; sourceTree = "<group>"; };
 		98ECC8D428D47255001CCBBC /* ResourceListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResourceListView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -171,6 +175,8 @@
 				9865351A28D4AE1E005FE643 /* Networking.swift */,
 				98BD689328E709C600A2848B /* ResourceDataService.swift */,
 				98BD688E28E7018700A2848B /* HardcodedResourceDataService.swift */,
+				98BD689528E70C4600A2848B /* RemoteResourceDataService.swift */,
+				98C37BEF28E70EE800E988A9 /* BCRError.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -345,12 +351,14 @@
 			files = (
 				98BC2EFB28CE5A6B00662124 /* ContentView.swift in Sources */,
 				98BC2EF928CE5A6B00662124 /* BCR_iosApp.swift in Sources */,
+				98C37BF028E70EE800E988A9 /* BCRError.swift in Sources */,
 				98BD688D28E700D600A2848B /* ResourcesViewModel.swift in Sources */,
 				98ECC8D528D47255001CCBBC /* ResourceListView.swift in Sources */,
 				98BC2F2528CE5F3700662124 /* ResourceView.swift in Sources */,
 				98BD688F28E7018700A2848B /* HardcodedResourceDataService.swift in Sources */,
 				9865351D28D4B432005FE643 /* Resources.swift in Sources */,
 				98BD689428E709C600A2848B /* ResourceDataService.swift in Sources */,
+				98BD689628E70C4600A2848B /* RemoteResourceDataService.swift in Sources */,
 				98BC2F2728CE651A00662124 /* HardcodedResources.swift in Sources */,
 				9865351B28D4AE1E005FE643 /* Networking.swift in Sources */,
 			);
