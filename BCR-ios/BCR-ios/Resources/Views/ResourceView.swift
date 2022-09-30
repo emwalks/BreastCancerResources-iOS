@@ -43,8 +43,7 @@ struct ResourceView: View {
                     .font(.body)
             }
             if (resource.link != nil) {
-                Link("\((resource.link ?? URL(string: ""))!)",
-                     destination: resource.link!)
+                Link(resource.link!, destination: URL(string: resource.link!)!)
                     .font(.callout)
             }
             if (resource.tags != nil) {
@@ -65,7 +64,7 @@ struct ResourceView_Previews: PreviewProvider {
                                                                subtitle: nil,
                                                                description: "My subtitle",
                                                                picture: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Sea_Otter_%28Enhydra_lutris%29_%2825169790524%29_crop.jpg/800px-Sea_Otter_%28Enhydra_lutris%29_%2825169790524%29_crop.jpg",
-                                                               link: URL(string: "emwalks.com"),
+                                                               link: "emwalks.com",
                                                                tags: ["book", "podcast"]))
     }
 }

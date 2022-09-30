@@ -19,7 +19,7 @@ class RemoteResourceDataService: ResourceDataService, ObservableObject {
             print(error)
             throw error
         }
-        self.resourcesData = result
+        self.resourcesData = result.data
     }
     
     func getResources() -> [Resource] {
