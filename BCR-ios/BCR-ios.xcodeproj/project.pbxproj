@@ -55,6 +55,7 @@
 		98BC2F2228CE5B5C00662124 /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		98BC2F2428CE5F3700662124 /* ResourceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResourceView.swift; sourceTree = "<group>"; };
 		98BC2F2628CE651A00662124 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		98BD688A28E6E52F00A2848B /* DeveloperNotes.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = DeveloperNotes.md; sourceTree = "<group>"; };
 		98ECC8D428D47255001CCBBC /* ResourceListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResourceListView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -87,9 +88,9 @@
 			isa = PBXGroup;
 			children = (
 				98BC2EF728CE5A6B00662124 /* BCR-ios */,
-				98BD688828E6DF7A00A2848B /* Utils */,
 				98BC2F0828CE5A6C00662124 /* BCR-iosTests */,
 				98BC2F1228CE5A6C00662124 /* BCR-iosUITests */,
+				98BD688928E6E4D600A2848B /* Docs */,
 				98BC2EF628CE5A6B00662124 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -110,6 +111,7 @@
 				98BC2EF828CE5A6B00662124 /* BCR_iosApp.swift */,
 				98BC2EFA28CE5A6B00662124 /* ContentView.swift */,
 				98BD688728E6DF3C00A2848B /* Resources */,
+				98BD688828E6DF7A00A2848B /* Utils */,
 			);
 			path = "BCR-ios";
 			sourceTree = "<group>";
@@ -183,6 +185,14 @@
 				98BC2EFE28CE5A6C00662124 /* Preview Content */,
 			);
 			path = Utils;
+			sourceTree = "<group>";
+		};
+		98BD688928E6E4D600A2848B /* Docs */ = {
+			isa = PBXGroup;
+			children = (
+				98BD688A28E6E52F00A2848B /* DeveloperNotes.md */,
+			);
+			path = Docs;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -480,7 +490,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Utils/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"BCR-ios/Utils/Preview Content\"";
 				DEVELOPMENT_TEAM = Y983APTU2S;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -510,7 +520,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Utils/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"BCR-ios/Utils/Preview Content\"";
 				DEVELOPMENT_TEAM = Y983APTU2S;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
