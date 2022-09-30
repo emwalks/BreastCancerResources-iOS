@@ -10,7 +10,7 @@ import SwiftUI
 struct ResourceListView: View {
     
     // TODO: this gluing probably should not be done here
-    var viewModel = ResourcesViewModel(dataService: HardcodedResourceDataService())
+    var viewModel = ResourcesViewModel(dataService: RemoteResourceDataService())
     
     // TODO: future feature - separate by tag type - e.g. filter and sort functionality
     var body: some View {

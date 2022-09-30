@@ -17,21 +17,31 @@ struct Networking {
         
         let url = URL(string:"https://emwalks.github.io/BreastCancerResourcesRemoteRepo/data/resources.json")!
         
-        let (data, response) = try await URLSession.shared.data(from: url)
-        
-        guard let httpResponse = response as? HTTPURLResponse, httpResponse.statusCode == 200 else {
-            throw BCRError.invalidServerReponse
+        do {
+            let (data, response) = try await URLSession.shared.data(from: url)
+            
+            guard let httpResponse = response as? HTTPURLResponse, httpResponse.statusCode == 200 else {
+                let error = BCRError.invalidServerReponse
+                print(error)
+                throw error
+            }
+            
+            // TODO: The response is being returned but I am getting a parsing error
+            guard let resources = try?
+                    JSONDecoder().decode([Resource].self, from: data) else {
+                let error = BCRError.parsingError
+                print(error.localizedDescription)
+                print(error)
+                throw error
+            }
+            
+            return resources
         }
-        // TODO: The response is being returned but I am getting a parsing error
-        guard let resources = try?
-                JSONDecoder().decode(Resources.self, from: data) else {
-            print(BCRError.parsingError.localizedDescription)
-            throw BCRError.parsingError
-        }
-        return resources.data
     }
-
+    
 }
+
+
 
 
 
