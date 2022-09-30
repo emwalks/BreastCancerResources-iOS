@@ -86,8 +86,8 @@
 		98BC2EEC28CE5A6B00662124 = {
 			isa = PBXGroup;
 			children = (
-				98BC2F2228CE5B5C00662124 /* Launch Screen.storyboard */,
 				98BC2EF728CE5A6B00662124 /* BCR-ios */,
+				98BD688828E6DF7A00A2848B /* Utils */,
 				98BC2F0828CE5A6C00662124 /* BCR-iosTests */,
 				98BC2F1228CE5A6C00662124 /* BCR-iosUITests */,
 				98BC2EF628CE5A6B00662124 /* Products */,
@@ -109,13 +109,7 @@
 			children = (
 				98BC2EF828CE5A6B00662124 /* BCR_iosApp.swift */,
 				98BC2EFA28CE5A6B00662124 /* ContentView.swift */,
-				98ECC8D428D47255001CCBBC /* ResourceListView.swift */,
-				98BC2F2428CE5F3700662124 /* ResourceView.swift */,
-				98BC2F2628CE651A00662124 /* Model.swift */,
-				9865351C28D4B432005FE643 /* Resources.swift */,
-				9865351A28D4AE1E005FE643 /* Networking.swift */,
-				98BC2EFC28CE5A6C00662124 /* Assets.xcassets */,
-				98BC2EFE28CE5A6C00662124 /* Preview Content */,
+				98BD688728E6DF3C00A2848B /* Resources */,
 			);
 			path = "BCR-ios";
 			sourceTree = "<group>";
@@ -143,6 +137,52 @@
 				98BC2F1528CE5A6C00662124 /* BCR_iosUITestsLaunchTests.swift */,
 			);
 			path = "BCR-iosUITests";
+			sourceTree = "<group>";
+		};
+		98BD688428E6DE2A00A2848B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				98ECC8D428D47255001CCBBC /* ResourceListView.swift */,
+				98BC2F2428CE5F3700662124 /* ResourceView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		98BD688528E6DE3900A2848B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				98BC2F2628CE651A00662124 /* Model.swift */,
+				9865351C28D4B432005FE643 /* Resources.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		98BD688628E6DE4300A2848B /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				9865351A28D4AE1E005FE643 /* Networking.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		98BD688728E6DF3C00A2848B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				98BD688628E6DE4300A2848B /* Services */,
+				98BD688528E6DE3900A2848B /* Model */,
+				98BD688428E6DE2A00A2848B /* Views */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		98BD688828E6DF7A00A2848B /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				98BC2F2228CE5B5C00662124 /* Launch Screen.storyboard */,
+				98BC2EFC28CE5A6C00662124 /* Assets.xcassets */,
+				98BC2EFE28CE5A6C00662124 /* Preview Content */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -440,7 +480,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"BCR-ios/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Utils/Preview Content\"";
 				DEVELOPMENT_TEAM = Y983APTU2S;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -470,7 +510,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"BCR-ios/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Utils/Preview Content\"";
 				DEVELOPMENT_TEAM = Y983APTU2S;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;

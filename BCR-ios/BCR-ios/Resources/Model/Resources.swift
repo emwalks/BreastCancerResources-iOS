@@ -21,12 +21,3 @@ public struct Resource: Decodable, Identifiable {
     var tags: [String]?
 }
 
-//public struct Attributes: Decodable, Identifiable {
-//    public var id: Int
-//    var title: String
-//    var subtitle: String?
-//    var description: String?
-//    var picture: String?
-//    var link: URL?
-//    var tags: [String]?
-//}

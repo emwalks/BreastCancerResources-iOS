@@ -30,23 +30,12 @@ class Model: ObservableObject {
             picture: "https://ichef.bbci.co.uk/images/ic/320x320/p06bfy8j.jpg",
             link: URL(string:     "https://www.bbc.co.uk/sounds/brand/p0608649")!,
             tags: ["podcast"])
-        
-//        self.resources = [
-//            Resource(
-//                attributes: myHardcodedResourceAttributes,
-//                id: UUID()),
-//            Resource(
-//                attributes: mySecondHardcodedResourceAttributes,
-//                id: UUID())
-//        ]
+        getRemoteResources()
     }
+    
+    public func getRemoteResources() {
         
-    public func getRemoteResources() async {
-        do {
-            let resources = try await Networking().fetchResources()
-            self.resources = resources
-        } catch {
-            print(error)
-        }
+        self.resources = [myHardcodedResourceAttributes, mySecondHardcodedResourceAttributes]
+
     }
 }

@@ -9,6 +9,7 @@ import SwiftUI
 
 struct ResourceListView: View {
     
+    // TODO: this should be a view model
     var model = Model()
                 
     var body: some View {
@@ -20,12 +21,8 @@ struct ResourceListView: View {
             }
             .navigationTitle("Resources")
             .onAppear {
-                Task {
-                    await model.getRemoteResources()
-                }
             }
             Text("Select a Resource")
-            
         }
     }
 }
