@@ -55,7 +55,7 @@ struct Networking {
     // having a wee go using concurrancy
     // https://www.raywenderlich.com/28450876-beginning-networking-with-urlsession/lessons/2
     
-    func fetchRemoteResources() async throws -> Resources {
+    func fetchRemoteResources() async throws -> [Resource] {
         
         let localJSONParsing = try! JSONDecoder().decode(Resources.self, from: json)
         print(localJSONParsing)
@@ -71,10 +71,8 @@ struct Networking {
                 throw error
             }
             
-            
-            // TODO: The response is being returned but I am getting a parsing error
             guard let resources = try?
-                    JSONDecoder().decode(Resources.self, from: data) else {
+                    JSONDecoder().decode(Resources.self, from: data).data else {
                 let error = BCRError.parsingError
                 print(error.localizedDescription)
                 print(error)

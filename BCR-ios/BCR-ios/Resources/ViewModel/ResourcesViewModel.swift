@@ -14,7 +14,8 @@ class ResourcesViewModel: ObservableObject  {
     
     init(dataService: ResourceDataService) {
         self.dataService = dataService
-        resources = dataService.getResources()
+        dataService.getResources()
+        self.resources = dataService.resourcesData
     }
     
 }

@@ -10,6 +10,8 @@ import SwiftUI
 
 class RemoteResourceDataService: ResourceDataService, ObservableObject {
     var networkingService = Networking()
+    
+    // TODO: the result is getting set to the resourcesData with 4 values. but not getting updated. Need to investigate
     @Published var resourcesData: [Resource] = []
     
     @MainActor
@@ -19,13 +21,12 @@ class RemoteResourceDataService: ResourceDataService, ObservableObject {
             print(error)
             throw error
         }
-        self.resourcesData = result.data
+        self.resourcesData = result
     }
     
-    func getResources() -> [Resource] {
+    func getResources() {
         Task {
             try? await fetchFromRemote()
         }
-        return resourcesData
     }
 }

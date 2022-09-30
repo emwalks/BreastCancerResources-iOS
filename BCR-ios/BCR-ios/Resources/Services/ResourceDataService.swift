@@ -12,5 +12,5 @@ import Foundation
 protocol ResourceDataService {
     var resourcesData: [Resource] { get set }
     
-    func getResources() -> [Resource]
+    func getResources()
 }

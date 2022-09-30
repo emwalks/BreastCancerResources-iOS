@@ -8,10 +8,10 @@
 import Foundation
 
 class HardcodedResourceDataService: ResourceDataService {
-    var resourcesData = HardcodedResources().resources
+    var resourcesData: [Resource] = []
     
-    func getResources() -> [Resource] {
-        return resourcesData
+    func getResources() {
+        self.resourcesData = HardcodedResources().resources
     }
     
 }
