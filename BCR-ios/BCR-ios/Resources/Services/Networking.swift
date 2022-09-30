@@ -19,7 +19,7 @@ public struct Networking {
         guard let httpResponse = response as? HTTPURLResponse, httpResponse.statusCode == 200 else {
             throw BCRError.invalidServerReponse
         }
-        
+        // TODO: The response is being returned but I am getting a parsing error
         guard let resources = try? JSONDecoder().decode(Resources.self, from: data).data else {
             throw BCRError.parsingError
         }
