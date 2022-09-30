@@ -30,12 +30,10 @@ class Model: ObservableObject {
             picture: "https://ichef.bbci.co.uk/images/ic/320x320/p06bfy8j.jpg",
             link: URL(string:     "https://www.bbc.co.uk/sounds/brand/p0608649")!,
             tags: ["podcast"])
-        getRemoteResources()
+        getResources()
     }
     
-    public func getRemoteResources() {
-        
+    public func getResources() {
         self.resources = [myHardcodedResourceAttributes, mySecondHardcodedResourceAttributes]
-
     }
 }
