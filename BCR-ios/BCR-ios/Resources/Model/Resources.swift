@@ -8,7 +8,7 @@
 import Foundation
 
 struct Resources: Decodable {
-    let data: [Resource]
+    var data: [Resource]
 }
 
 struct Resource: Decodable, Identifiable {

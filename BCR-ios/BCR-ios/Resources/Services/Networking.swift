@@ -24,11 +24,11 @@ struct Networking {
         }
         // TODO: The response is being returned but I am getting a parsing error
         guard let resources = try?
-                JSONDecoder().decode(Resources.self, from: data).data else {
+                JSONDecoder().decode(Resources.self, from: data) else {
             print(BCRError.parsingError.localizedDescription)
             throw BCRError.parsingError
         }
-        return resources
+        return resources.data
     }
 
 }
