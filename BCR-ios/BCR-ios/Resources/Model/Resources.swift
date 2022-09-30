@@ -7,12 +7,12 @@
 
 import Foundation
 
-public struct Resources: Decodable {
-    public let data: [Resource]
+struct Resources: Decodable {
+    let data: [Resource]
 }
 
-public struct Resource: Decodable, Identifiable {
-    public var id: Int 
+struct Resource: Decodable, Identifiable {
+    var id: Int 
     var title: String
     var subtitle: String?
     var description: String?

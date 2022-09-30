@@ -1,18 +1,17 @@
 //
-//  Model.swift
+//  ResourceModel.swift
 //  BCR-ios
 //
-//  Created by Emma Walker - TVandMobile Platforms - Core Engineering on 11/09/2022.
+//  Created by Emma Walker on 11/09/2022.
 //
 
 import Foundation
-import SwiftUI
 
-class Model: ObservableObject {
+struct HardcodedResources {
     
     private let myHardcodedResourceAttributes: Resource
     private let mySecondHardcodedResourceAttributes: Resource
-    @Published var resources: [Resource] = []
+    let resources: [Resource]
     
     init() {
         self.myHardcodedResourceAttributes = Resource(
@@ -30,10 +29,7 @@ class Model: ObservableObject {
             picture: "https://ichef.bbci.co.uk/images/ic/320x320/p06bfy8j.jpg",
             link: URL(string:     "https://www.bbc.co.uk/sounds/brand/p0608649")!,
             tags: ["podcast"])
-        getResources()
-    }
-    
-    public func getResources() {
         self.resources = [myHardcodedResourceAttributes, mySecondHardcodedResourceAttributes]
     }
+    
 }

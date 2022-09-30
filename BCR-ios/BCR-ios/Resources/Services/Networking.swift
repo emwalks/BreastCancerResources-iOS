@@ -8,7 +8,7 @@
 import Foundation
 import SwiftUI
 
-public struct Networking {
+struct Networking {
     
     // having a wee go using concurrancy
     // https://www.raywenderlich.com/28450876-beginning-networking-with-urlsession/lessons/2

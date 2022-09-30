@@ -9,12 +9,13 @@ import SwiftUI
 
 struct ResourceListView: View {
     
-    // TODO: this should be a view model
-    var model = Model()
-                
+    // TODO: this gluing probably should not be done here
+    var viewModel = ResourcesViewModel(dataService: HardcodedResourceDataService())
+    
+    // TODO: future feature - separate by tag type - e.g. filter and sort functionality
     var body: some View {
         NavigationView {
-            List(model.resources) {
+            List(viewModel.resources) {
                 resource in
                 NavigationLink(resource.title,
                                destination: ResourceView(resource: resource))
