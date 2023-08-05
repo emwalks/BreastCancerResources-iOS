@@ -7,6 +7,8 @@
 # BreastCancerResources-iOS
 <br />
 <p align="left">
+  ⚠️ WIP - personal project: incomplete ⚠️
+  
   A Collection of useful resources for those being treated for breast cancer. 
 </p>
 
