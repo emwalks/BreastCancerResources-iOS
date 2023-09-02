@@ -10,9 +10,6 @@ import SwiftUI
 
 struct Networking {
     
-    // having a wee go using concurrancy
-    // https://www.raywenderlich.com/28450876-beginning-networking-with-urlsession/lessons/2
-    
     func fetchRemoteResources() async throws -> [Resource] {
         
         let url = URL(string:"https://emwalks.github.io/BreastCancerResourcesRemoteRepo/data/resources.json")!

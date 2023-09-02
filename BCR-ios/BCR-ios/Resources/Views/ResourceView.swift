@@ -38,8 +38,8 @@ struct ResourceView: View {
                 Text("\(resource.subtitle ?? defaultText)")
                     .font(.title3)
             }
-            if (resource.description != nil) {
-                Text("\(resource.description ?? defaultText)")
+            if (resource.content != nil) {
+                Text("\(resource.content ?? defaultText)")
                     .font(.body)
             }
             if (resource.link != nil) {
@@ -62,7 +62,7 @@ struct ResourceView_Previews: PreviewProvider {
         // pull this out into var
         ResourceView(resource: Resource(id: 1, title: "My Title",
                                                                subtitle: nil,
-                                                               description: "My subtitle",
+                                                               content: "My description",
                                                                picture: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Sea_Otter_%28Enhydra_lutris%29_%2825169790524%29_crop.jpg/800px-Sea_Otter_%28Enhydra_lutris%29_%2825169790524%29_crop.jpg",
                                                                link: "emwalks.com",
                                                                tags: ["book", "podcast"]))

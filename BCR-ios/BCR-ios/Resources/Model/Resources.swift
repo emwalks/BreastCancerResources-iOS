@@ -15,7 +15,7 @@ struct Resource: Decodable, Identifiable {
     var id: Int
     var title: String
     var subtitle: String?
-    var description: String?
+    var content: String?
     var picture: String?
     var link: String?
     var tags: [String]?
