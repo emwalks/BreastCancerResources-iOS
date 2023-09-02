@@ -11,4 +11,5 @@ enum BCRError: Error {
     case invalidServerReponse
     case parsingError
     case dataServiceError
+    case networkingError
 }
