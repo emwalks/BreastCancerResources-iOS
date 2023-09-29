@@ -4,6 +4,7 @@
 
 - Currently having a parsing error. Get request returns JSON from remote resource - the error is a parsing error. 
 - Refactor back to having the resource not contain an id remotely?
+- Use what I've learned in https://github.com/emwalks/CodingChallengePractice/tree/main/CodingChallengePractice and apply here (concurreny)
 
 ### Resources
 

@@ -60,7 +60,7 @@ struct ResourceView_Previews: PreviewProvider {
     static var previews: some View {
         // add modifer .previewDevice()
         // pull this out into var
-        ResourceView(resource: Resource(id: 1, title: "My Title",
+        ResourceView(resource: Resource(title: "My Title",
                                                                subtitle: nil,
                                                                content: "My description",
                                                                picture: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Sea_Otter_%28Enhydra_lutris%29_%2825169790524%29_crop.jpg/800px-Sea_Otter_%28Enhydra_lutris%29_%2825169790524%29_crop.jpg",
